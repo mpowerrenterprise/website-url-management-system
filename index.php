@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+
+if($_SESSION['login_session'] == "admin"){
+
+    header("Location: dashboard-index.php");
+    die();
+
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,33 +27,36 @@
 	</head>
 	<body>
 	<section class="ftco-section">
+	
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Personal Management System</h2>
+			<form action="handle_login.php" method = "POST">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center mb-5">
+						<h2 class="heading-section">Personal Management System</h2>
+					</div>
 				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-5">
-					<div class="login-wrap p-4 p-md-5">
-		      	<div class="icon d-flex align-items-center justify-content-center">
-		      		<span class="fa fa-user-o"></span>
-		      	</div>
-		      	<h3 class="text-center mb-4">Have an account?</h3>
-						<form action="#" class="login-form">
-		      		<div class="form-group">
-		      			<input type="text" class="form-control rounded-left" placeholder="Username" required>
-		      		</div>
-	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
-	            </div>
-	            <div class="form-group">
-	            	<button type="submit" class="btn btn-primary rounded submit p-3 px-5">Login</button>
-	            </div>
-	          </form>
-	        </div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-lg-5">
+						<div class="login-wrap p-4 p-md-5">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="fa fa-user-o"></span>
+					</div>
+					<h3 class="text-center mb-4">Have an account?</h3>
+							<form action="#" class="login-form">
+						<div class="form-group">
+							<input type="text" class="form-control rounded-left" name="username" placeholder="Username" required>
+						</div>
+					<div class="form-group d-flex">
+					<input type="password" class="form-control rounded-left" name="password" placeholder="Password" required>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary rounded submit p-3 px-5">Login</button>
+					</div>
+				</form>
 				</div>
-			</div>
+					</div>
+				</div>
+			<form>
 		</div>
 	</section>
 
