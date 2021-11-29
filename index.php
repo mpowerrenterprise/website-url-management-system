@@ -2,12 +2,17 @@
 
 session_start();
 
-if($_SESSION['login_session'] == "admin"){
+if(isset($_SESSION["login_session"])){
+	if($_SESSION['login_session'] == "admin"){
 
-    header("Location: dashboard-index.php");
-    die();
-
+		header("Location: dashboard-index.php");
+		die();
+	
+	}
+	
 }
+
+
 
 ?>
 
