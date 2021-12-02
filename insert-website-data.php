@@ -23,9 +23,14 @@ $website_description = $_POST["description"];
 $sql = "INSERT INTO website_data VALUES('','$website_name', '$website_url', '$website_description')";
  
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+
+   header("Location: dashboard-index.php?status=done");
+   die();
+
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+
+    header("Location: dashboard-index.php?status=failed");
+    die();
 }
 
 $conn->close();

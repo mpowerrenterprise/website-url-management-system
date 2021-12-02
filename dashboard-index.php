@@ -13,6 +13,29 @@ if($_SESSION['login_session'] != "admin"){
 
 <?php include('dashboard-asset/head-template.php');?>
 
+<?php
+
+if(isset($_GET['status']) == true){
+    
+    $status = $_GET['status'];
+
+    if($status == "done"){
+
+        echo "<div class='alert alert-success' role='alert'>
+                 Data inserted!.
+              </div>";
+
+    }else if($status == "failed"){
+
+        echo "<div class='alert alert-danger' role='alert'>
+        Data IS NOT inserted!.
+     </div>";
+     
+    }
+}
+
+?>
+
 <div class="container-fluid">
 
 <form method="POST" action="insert-website-data.php">

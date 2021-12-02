@@ -3,6 +3,7 @@
 session_start();
 
 if(isset($_SESSION["login_session"])){
+
 	if($_SESSION['login_session'] == "admin"){
 
 		header("Location: dashboard-index.php");
@@ -11,7 +12,6 @@ if(isset($_SESSION["login_session"])){
 	}
 	
 }
-
 
 
 ?>
