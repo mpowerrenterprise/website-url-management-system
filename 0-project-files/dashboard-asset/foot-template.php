@@ -5,7 +5,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Deep11 | All rights reserved | Created by <a href="https://www.linkedin.com/in/gunarakulan-gunaretnam-161119156/" target="_blank">Gunarakulan Gunaretnam</a></span>
                     </div>
                 </div>
             </footer>
