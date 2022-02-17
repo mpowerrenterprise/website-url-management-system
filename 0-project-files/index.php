@@ -8,9 +8,9 @@ if(isset($_SESSION["login_session"])){
 
 		header("Location: dashboard-index.php");
 		die();
-	
+
 	}
-	
+
 }
 
 
@@ -26,18 +26,18 @@ if(isset($_SESSION["login_session"])){
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<link rel="stylesheet" href="login-asset/css/style.css">
 
 	</head>
 	<body>
 	<section class="ftco-section">
-	
+
 		<div class="container">
 			<form action="handle_login.php" method = "POST">
 				<div class="row justify-content-center">
 					<div class="col-md-6 text-center mb-5">
-						<h2 class="heading-section">Personal Management System</h2>
+						<h2 class="heading-section">Website URL Management System</h2>
 					</div>
 				</div>
 				<div class="row justify-content-center">
@@ -72,4 +72,3 @@ if(isset($_SESSION["login_session"])){
 
 	</body>
 </html>
-
