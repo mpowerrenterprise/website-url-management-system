@@ -25,6 +25,13 @@
         <span>View Data</span></a>
 </li>
 
+
+<li class="nav-item active">
+    <a class="nav-link" href="logout.php">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Logout</span></a>
+</li>
+
 <!-- Divider -->
 <hr class="sidebar-divider my-0">
 
