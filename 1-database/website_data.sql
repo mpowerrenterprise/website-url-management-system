@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2022 at 12:37 PM
+-- Generation Time: Feb 17, 2022 at 01:01 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -35,6 +35,13 @@ CREATE TABLE `website_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `website_data`
+--
+
+INSERT INTO `website_data` (`auto_id`, `website_name`, `website_url`, `description`) VALUES
+(4, 'Facebook', 'https://www.facebook.com/', 'This is a social media website');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -52,7 +59,7 @@ ALTER TABLE `website_data`
 -- AUTO_INCREMENT for table `website_data`
 --
 ALTER TABLE `website_data`
-  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `auto_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
