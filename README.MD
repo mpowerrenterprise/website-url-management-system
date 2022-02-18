@@ -24,6 +24,12 @@ PHP and MySQL are the main technologies for this management system. This system 
 - Database is found on the '1-database' folder, upload the database
 
 
+
+## Credentials
+- Username:- **admin**
+- Password:- **admin123**
+
+
 Any Questions? | Conduct Me
 ---
 
