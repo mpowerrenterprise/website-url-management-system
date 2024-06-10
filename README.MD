@@ -1,4 +1,4 @@
-# WEBSITE URL MANAGEMENT SYSTEM
+# Website URL Management System
 
 
 ## Introduction
@@ -23,14 +23,12 @@ PHP and MySQL are the main technologies for this management system. This system 
 ## Other
 - Database is found on the '1-database' folder, upload the database
 
-
-
 ## Credentials
 - Username:- **admin**
 - Password:- **admin123**
 
 
-# CONTACT
+# Contact
 
 ### Website: 
 
